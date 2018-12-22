@@ -5,7 +5,14 @@ public class Train {
 	private String trainNum;
 	private int hour;
 	private int min;
-	Train[] trains = new Train[5];
+	private char[] toString;//?
+
+	public Train(String target, String trainNum, int hour, int min) {
+		this.target = target;
+		this.trainNum = trainNum;
+		this.hour = hour;
+		this.min = min;
+	}
 
 	public String getTarget() {
 		return target;
@@ -39,18 +46,16 @@ public class Train {
 		this.min = min;
 	}
 
-	public Train[] getTrains() {
-		return trains;
+	@Override
+	public String toString() {
+		return "Train [target=" + target + ", trainNum=" + trainNum + ", hour=" + hour + ", min=" + min + "]";
 	}
 
-	public void setTrains(Train[] trains) {
-		this.trains = trains;
+	public char[] getToString() {
+		return toString;
 	}
 
-	public Train(String target, String trainNum, int hour, int min) {
-		this.target = target;
-		this.trainNum = trainNum;
-		this.hour = hour;
-		this.min = min;
+	public void setToString(char[] toString) {
+		this.toString = toString;
 	}
 }
