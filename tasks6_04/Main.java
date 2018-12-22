@@ -24,6 +24,13 @@ public class Main {
 		trains[2] = tr3;
 		trains[3] = tr4;
 		trains[4] = tr5;
+		
+	SortByTarget sort = new SortByTarget();
+		Train[] trainsNew = new Train[5];
+		trainsNew =sort.sortByTarget(trains); 
 
+		for (Train train : trainsNew){ 
+		System.out.println (train.getToString());
+		}
 	}
 }
