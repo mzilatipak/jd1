@@ -23,8 +23,8 @@ public class Main {
 		if(sc.hasNextDouble()) { 
 			return sc.nextInt();
 		} else {
-			System.out.println("Ошибка при вводе. Повторите ввод"); 
-			return getNum(); //на самом деле я весь гетНам списал, т.к. я и на х и на у писал отдельный ввод. позже разобрался немного и вот)
+			System.out.println("ГЋГёГЁГЎГЄГ  ГЇГ°ГЁ ГўГўГ®Г¤ГҐ. ГЏГ®ГўГІГ®Г°ГЁГІГҐ ГўГўГ®Г¤"); 
+			return getNum(); //zashita ot duraka chestno spisana, vot i netu podderzhki kirilicy)
 		}
 	}
 	
